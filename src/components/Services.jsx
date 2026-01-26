@@ -9,15 +9,22 @@ const Services = () => {
         <Palette className="w-10 sm:w-12 h-10 sm:h-12 mb-4 sm:mb-6 text-[#FF6B00] group-hover:text-white" />
         <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 group-hover:text-white tracking-tighter">DISEÑO GRÁFICO</h3>
         <p className="text-sm sm:text-base lg:text-lg text-gray-600 group-hover:text-orange-100">
-          Creamos soluciones visuales: identidades, materiales de marketing, papelería y más.
+          Creamos soluciones visuales:
         </p>
+        <ul className="space-y-2 text-sm sm:text-base lg:text-base text-gray-600 group-hover:text-white">
+          <li>• Identidades</li>
+          <li>• Materiales de marketing</li>
+          <li>• Papelería</li>
+          <li>• Más</li>
+        </ul>
+      
       </div>
 
       {/* Contenido Audiovisual */}
       <div className="bg-slate-900 p-6 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl text-white group hover:bg-white hover:text-black transition-all duration-500 border border-transparent hover:border-slate-200">
         <Video className="w-10 sm:w-12 h-10 sm:h-12 mb-4 sm:mb-6 text-[#FF6B00]" />
         <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 tracking-tighter">CONTENIDO AUDIOVISUAL</h3>
-        <ul className="space-y-2 text-sm sm:text-base lg:text-base text-gray-400 group-hover:text-gray-600">
+        <ul className="space-y-2 text-sm sm:text-base lg:text-base text-gray-400 group-hover:text-black">
           <li>• Cobertura de eventos</li>
           <li>• Foto producto</li>
           <li>• Contenido para redes</li>
