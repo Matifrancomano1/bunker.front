@@ -5,6 +5,8 @@ import Services from '../components/Services';
 import SocialMediaPacks from '../components/SocialMediaPacks';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
+import Carrusel from '../components/Carrusel';
+
 
 const Landing = () => {
   const [formData, setFormData] = useState({ name: '', lastname: '', gmail: '', tel: '' });
@@ -21,6 +23,9 @@ const Landing = () => {
 
       {/* Packs Section */}
       <SocialMediaPacks />
+
+      {/*Carrusel */}
+      <Carrusel/>
 
       {/* Contacto Section */}
       <ContactForm formData={formData} setFormData={setFormData} />

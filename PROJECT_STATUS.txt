@@ -55,16 +55,4 @@ ESTRUCTURA FINAL DEL PROYECTO
 2. npm run dev
 3. Abrir: http://localhost:5173
 
-===========================================
-
-📦 PARA DESPLEGAR EN VERCEL:
-
-1. Conectar repositorio a Vercel
-2. Configurar variables de entorno en panel:
-   - VITE_API_URL=https://bunker-api-he07.onrender.com
-   - VITE_ADMIN_PASSWORD=BunkerAdmin2026
-3. Deploy automático en cada push a main
-
-===========================================
-
 ✨ TODO ESTÁ LISTO PARA FUNCIONAR ✨
