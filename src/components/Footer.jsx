@@ -63,7 +63,7 @@ const Footer = () => {
 
         {/* BOTTOM BAR */}
         <div className="mt-20 pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-600 text-xs">
+          <p className="text-gray-750 text-xs">
             © 2026 Bunker Studio. Desarrollado por <span className="text-white font-bold">FlowTech</span>.
           </p>
           <button 
