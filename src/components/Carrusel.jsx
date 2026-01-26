@@ -28,14 +28,14 @@ const LogoCarousel = () => {
   ];
 
   return (
-    <div className="bg-white py-16 border-y border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 mb-12">
-        <h2 className="text-center text-2xl font-bold text-gray-800 uppercase tracking-widest">
+    <div className="bg-gray-100 py-8 sm:py-12 lg:py-16 border-y border-gray-300">
+      <div className="w-full px-4 mb-8 sm:mb-10 lg:mb-12">
+        <h2 className="text-center text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 uppercase tracking-widest">
           Empresas que confían en nosotros
         </h2>
       </div>
       
-      <div className="relative w-full overflow-hidden bg-white py-8">
+      <div className="relative w-full overflow-hidden bg-gray-100 py-4 sm:py-6 lg:py-8">
         <style>{`
           @keyframes scroll-infinite {
             0% {
@@ -55,6 +55,30 @@ const LogoCarousel = () => {
           .carousel-track:hover {
             animation-play-state: paused;
           }
+
+          /* Mobile */
+          @media (max-width: 640px) {
+            .carousel-logo {
+              height: 60px;
+              padding: 0 12px;
+            }
+          }
+
+          /* Tablet */
+          @media (min-width: 641px) and (max-width: 1024px) {
+            .carousel-logo {
+              height: 100px;
+              padding: 0 16px;
+            }
+          }
+
+          /* Desktop */
+          @media (min-width: 1025px) {
+            .carousel-logo {
+              height: 160px;
+              padding: 0 24px;
+            }
+          }
         `}</style>
         
         <div className="carousel-track">
@@ -63,7 +87,7 @@ const LogoCarousel = () => {
               key={index}
               src={logo}
               alt="Logo Cliente"
-              className="h-40 w-auto object-contain px-12 flex-shrink-0 transition-transform duration-300 hover:scale-125"
+              className="carousel-logo w-auto object-contain flex-shrink-0 transition-transform duration-300 hover:scale-110 sm:hover:scale-115 lg:hover:scale-125"
             />
           ))}
         </div>
