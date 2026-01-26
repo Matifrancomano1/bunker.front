@@ -28,22 +28,42 @@ const LogoCarousel = () => {
   ];
 
   return (
-    <div className="bg-gray-50 py-12 border-y border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 mb-8">
-        <h2 className="text-center text-xl font-semibold text-gray-500 uppercase tracking-widest">
+    <div className="bg-white py-16 border-y border-gray-200">
+      <div className="max-w-7xl mx-auto px-4 mb-12">
+        <h2 className="text-center text-2xl font-bold text-gray-800 uppercase tracking-widest">
           Empresas que confían en nosotros
         </h2>
       </div>
       
-      <div className="relative flex overflow-x-hidden">
-        <div className="py-12 animate-scroll flex items-center whitespace-nowrap">
-          {/* Duplicamos el array para el efecto infinito */}
-          {[...logos, ...logos, ...logos].map((logo, index) => (
+      <div className="relative w-full overflow-hidden bg-white py-8">
+        <style>{`
+          @keyframes scroll-infinite {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+          
+          .carousel-track {
+            animation: scroll-infinite 30s linear infinite;
+            display: flex;
+            width: fit-content;
+          }
+          
+          .carousel-track:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+        
+        <div className="carousel-track">
+          {[...logos, ...logos].map((logo, index) => (
             <img
               key={index}
               src={logo}
               alt="Logo Cliente"
-              className="mx-12 h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 opacity-60 hover:opacity-100"
+              className="h-24 w-auto object-contain px-8 flex-shrink-0 transition-transform duration-300 hover:scale-110"
             />
           ))}
         </div>
