@@ -76,23 +76,6 @@ npm run preview
 - **Lucide React** - Iconos SVG
 - **React Scroll** - Navegación smooth scroll
 
-## 🔧 Configuración
-
-### Variables de Entorno
-
-Crear un archivo `.env` en la raíz del proyecto (copiar desde `.env.example`):
-
-```env
-VITE_API_URL=https://bunker-api-he07.onrender.com
-VITE_ADMIN_PASSWORD=BunkerAdmin2026
-```
-
-### API Endpoints
-
-- **Base URL**: `https://bunker-api-he07.onrender.com`
-- **Crear contacto**: `POST /api/contactos`
-- **Obtener contactos**: `GET /api/contactos` (requiere header `x-admin-key`)
-
 ## 📱 Responsividad
 
 El proyecto está optimizado para:
