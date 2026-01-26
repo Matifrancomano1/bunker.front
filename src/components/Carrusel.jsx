@@ -63,7 +63,7 @@ const LogoCarousel = () => {
               key={index}
               src={logo}
               alt="Logo Cliente"
-              className="h-24 w-auto object-contain px-8 flex-shrink-0 transition-transform duration-300 hover:scale-110"
+              className="h-40 w-auto object-contain px-12 flex-shrink-0 transition-transform duration-300 hover:scale-125"
             />
           ))}
         </div>
