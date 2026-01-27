@@ -3,7 +3,7 @@ import { Send } from 'lucide-react';
 
 const ContactForm = ({ formData, setFormData }) => {
   const [status, setStatus] = useState('');
-  const API_URL = "https://bunker-api-he07.onrender.com";
+  const API_URL = "https://bunker-back-v2.onrender.com";
 
   const handleSubmit = async (e) => {
     e.preventDefault();

@@ -7,7 +7,7 @@ const Dashboard = () => {
   const [password, setPassword] = useState('');
 
   // ⚠️ IMPORTANTE: URL de la API en producción
-  const API_URL = "https://bunker-api-he07.onrender.com";
+  const API_URL = "https://bunker-back-v2.onrender.com";
 
   const handleLogin = (e) => {
     e.preventDefault();
