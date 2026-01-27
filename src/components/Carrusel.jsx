@@ -15,10 +15,9 @@ import logoRodados from '../assets/Ricards.png';
 import logoFarmaciaBonino from '../assets/FarmaciaBonino .png';
 import logoFarmaciaIrrazabal from '../assets/FarmaciaIrrazabal.png';
 import logoFarmaciaMontes from '../assets/FarmaciaMontes.png';
-import logoCantina from '../assets/Cantina-LigaPro.png';
-import logoIguana from '../assets/Iguana.png';
-import logoAntro from '../assets/Antro-Bar.png';
-import logoBreak from '../assets/break.png';
+import logoIguana from '../assets/Iguana.PNG';
+import logoAntro from '../assets/Antro-Bar.PNG';
+import logoBreak from '../assets/Break.PNG';
 
 const LogoCarousel = () => {
   const logos = [
@@ -27,7 +26,7 @@ const LogoCarousel = () => {
     logoBubulae, logoIndiana, logoIdent,
     logoKurday, logoLasTresMarias, logoInmobiliaria,
     logoIO, logoRodados, logoFarmaciaBonino,
-    logoFarmaciaIrrazabal, logoFarmaciaMontes, logoCantina, logoAntro, logoBreak, logoIguana
+    logoFarmaciaIrrazabal, logoFarmaciaMontes, logoAntro, logoBreak, logoIguana
   ];
 
   return (
